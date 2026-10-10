@@ -2,6 +2,12 @@
 
 ## Commands
 
+Nothing needs installing on your computer but Docker: `tools/docker.sh` runs any command below in a
+throwaway Node container, as you, with no extra privileges — `tools/docker.sh npm ci`, then
+`tools/docker.sh npm test`. On Linux, `DOCKER_NETWORK=host` lets it reach a TV by its address. `.npmrc`
+stops dependencies running install scripts. (`test:e2e` and `test:cobalt` bring their own browsers and
+images, so run those outside it.)
+
 | | |
 | --- | --- |
 | `npm run doctor` | Check prerequisites when something looks wrong |
