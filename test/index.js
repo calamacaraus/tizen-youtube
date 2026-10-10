@@ -13,7 +13,7 @@ const SUITES = [
     'mods/dislike/sync.js', 'mods/playerButtons.js', 'mods/startPage.js', 'mods/scroller.js',
     'mods/subtitles.js', 'mods/sponsorblock/index.js', 'mods/sponsorblock/autoSkip.js',
     'mods/quality.js', 'framework/wait-for.js', 'dom-shims.js', 'mods/network/originRewrite.js',
-    'mods/network/pageOrigin.js', 'framework/journal.js'
+    'mods/network/pageOrigin.js', 'framework/journal.js', 'mods/clock.js'
 ];
 
 const failed = SUITES.filter((suite) => {

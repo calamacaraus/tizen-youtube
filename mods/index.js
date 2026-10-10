@@ -9,6 +9,7 @@ import { start as startScrollSpeed } from './scroller/speed.js';
 import { start as startRapidPress } from './scroller/rapidPress.js';
 import { start as startSmoothNavigation } from './scroller/smoothNavigation.js';
 import { start as startSpeed } from './player/speed.js';
+import { start as startClock } from './clock/index.js';
 
 import './feed/index.js';
 import './adblock/index.js';
@@ -42,6 +43,7 @@ register('scroll speed', 'ui', startScrollSpeed);
 register('rapid press', 'ui', startRapidPress);
 register('smooth navigation', 'ui', startSmoothNavigation);
 register('playback speed', 'ui', startSpeed);
+register('clock', 'ui', startClock);
 
 // Taking over JSON.parse seals registration.
 register('json', 'intercept', interceptJson);

@@ -76,6 +76,10 @@ const defaultConfig = {
   scrollSpeed: '',
   enableRapidPress: true,
   enableSmoothNavigation: true,
+
+  // A small clock in the top-right corner; '24' or '12' hour.
+  enableClock: false,
+  clockFormat: '24',
 };
 
 function readStoredSettings() {

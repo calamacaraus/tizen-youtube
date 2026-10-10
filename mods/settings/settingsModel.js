@@ -45,6 +45,11 @@ const CODECS = [
 const INCREMENTS = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
   .map((step) => ({ label: `${step}×`, value: step }));
 
+const CLOCK_FORMATS = [
+  { label: '24-hour', value: '24' },
+  { label: '12-hour', value: '12' }
+];
+
 const PERCENTAGES = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
   .map((percent) => ({ label: `${percent}%`, value: percent }));
 
@@ -274,7 +279,10 @@ const GROUPS = [
       Switch('enableYouThereRenderer', 'Are you still watching?',
         'The prompt that stops playback after a long run', PRIVACY),
       Switch('enableSigninReminder', 'Sign-in reminder',
-        'The prompt shown to a signed-out viewer', PRIVACY)
+        'The prompt shown to a signed-out viewer', PRIVACY),
+      Switch('enableClock', 'Clock',
+        'A small clock in the top-right corner, above everything', SCREEN),
+      Choice('clockFormat', 'Clock format', 'How the clock shows the time', SCREEN, CLOCK_FORMATS)
     ]
   }
 ];
